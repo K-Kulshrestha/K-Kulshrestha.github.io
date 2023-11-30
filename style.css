@@ -26,6 +26,8 @@ nav {
     padding: 10px;
     border-radius: 10px;
     justify-content: center;
+    text-align: center;
+    width: 100%;
 }
 
 nav a {
@@ -39,18 +41,6 @@ nav a {
 nav a:hover {
     color: #ffffffcf;
     text-shadow: #000000 0px 0px;
-}
-
-/* Media Query for Mobile Screens */
-@media (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav a {
-        margin: 5px 0;
-    }
 }
 
 section {
