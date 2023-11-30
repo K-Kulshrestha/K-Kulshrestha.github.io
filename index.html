@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kshitij Kulshrestha - Portfolio</title>
+    <title>Kshitij Kulshrestha</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="canvas-container">
-        <canvas id="three-canvas"></canvas>
-        <!-- Three js library -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-        <!-- Add your custom     JavaScript for the flames effect here -->
-        <script src="script.js"></script>
+    <div id="loading">
+        <p id="loading-text">Hmm...</p>
+        <div id="loading-spinner"></div>
     </div>
     <header>
         <h1>Kshitij Kulshrestha</h1>
-        <p>Web Developer | Designer</p>
+        <p>Web Developer | Designer | Student</p>
     </header>
     <nav>
+        <div class="open-btn" onclick="openNav()">☰ Open</div>
         <a href="#home">Home</a>
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
@@ -26,12 +25,44 @@
     </nav>
     <main>
     <section id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Hello a bit about me I am student at University of Texas</p>
+        <h2>Welcome to My Website</h2>
+        <p>
+        Hello! My name is Kshitij Kulshrestha and I am currently a third-year computer science student at The University of Texas at Dallas, 
+        I have a passion for technology. 
+        I'm constantly seeking opportunities to explore and acquire new skills in the tech industry.
+        I have experience creating front-end interfaces as well as developing full-stack applications.
+        </p>
+        <p>
+        When I was 8 years old, I was introduced to the world of computers and I was fascinated by the way they worked.
+        I was always curious about how the computer was able to do so many things and how it was able to process so much information.
+        I remember watching my dad and my sister playing games together on the computer and I was amazed by the fact that they were able to play games on the computer.
+        </p>
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <p>Here, you can list some of your projects with links and descriptions.</p>
+        <p>Here are some of my projects:</p>
+        <a href="https://github.com/K-Kulshrestha/PolicyPioneer">Policy Pioneer &#128279;</a>
+        <p id="role">Full Stack Developer</p>
+        <p>
+            Elevating the experience of Small businesses by making the experience more intuitive
+            <ul>
+                <li>Designed and implemented a responsive front-end using HTML, CSS, and JavaScript</li>
+                <li>Developed a back-end using Python and Flask</li>
+                <li>Integrated Map Box api and made a custom algorithm for insurance rates</li>
+                <li>Deployed the webapp using Ngrok</li>
+            </ul>
+        </p>
+        <br>
+        <a href="https://github.com/SriNethala317/NurseNav">Nurse Nav &#128279;</a>
+        <p id="role">Front End Developer</p>
+        <p>
+            Our mission is to empower and support caregivers and elderly individuals through resources and community building. We strive to promote dignity, independence, and quality of life for all individuals.
+            <ul>
+                <li>Front End Developer</li>
+                <li>Customized the user experience (UX) based on users’ needs taking into account color psychology, color contrast, and color blindness considerations with rigorous feedback and testing</li>
+                <li>Utilized a manifest file and a service worker to offload data and keep important functionalities</li>
+            </ul>    
+        </p>
     </section>
     <section id="about">
         <h2>About Me</h2>
@@ -39,11 +70,25 @@
     </section>
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Provide your contact information or a contact form for visitors to get in touch.</p>
+        <form action="https://formspree.io/f/xoqoopnd" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Send Message</button>
+          </form>
     </section>
     </main>
     <footer>    
         <p>&copy; 2023 Kshitij Kulshrestha. All rights reserved.</p>
     </footer>
+
+<!-- Beta Warning -->
+<div id="beta-warning">This website is in beta. Use with caution.</div>
 </body>
 </html>

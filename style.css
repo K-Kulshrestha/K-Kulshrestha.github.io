@@ -2,15 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000; /* Set a background color for the content area */
+    background-color: #000000;
     color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Attaches the footer to the bottom of the screen */
-main{
+main {
     flex-grow: 1;
 }
 
@@ -21,22 +20,66 @@ header {
     text-align: center;
 }
 
-
 nav {
-    background-color: #00ff00;
+    background-color: white;
     display: flex;
-    justify-content: center;    
     padding: 10px;
+    border-radius: 10px;
+    justify-content: center;
 }
 
 nav a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     margin: 0 10px;
+    text-shadow: #000000 0px 0px;
+    font-size: medium;
+}
+
+nav a:hover {
+    color: #ffffffcf;
+    text-shadow: #000000 0px 0px;
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
 }
 
 section {
+    margin: auto;
     padding: 20px;
+}
+
+section a {
+    color: white;
+    text-decoration: none;
+    font-size: medium;
+    text-align: center;
+    background-color: blue;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+section #role {
+    background-color: orangered;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    margin: 5px;
+    font-size: medium;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    width: 150px;
 }
 
 footer {
@@ -46,19 +89,79 @@ footer {
     padding: 10px;
 }
 
-#canvas-container {
-    position: relative;
+form {
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
     width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-#three-canvas {
+button:hover {
+    background-color: #45a049;
+}
+
+#loading {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1; /* Set canvas behind other elements */
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+#loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* Beta Warning */
+#beta-warning {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
