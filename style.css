@@ -3,13 +3,14 @@
 html {
     scroll-behavior: smooth;
     scroll-padding: 10rem;
+    user-select: none;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #000;
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, 0.808);
     color: white;
     display: flex;
     flex-direction: column;
@@ -32,7 +33,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
-    font-family: 'Rubik Doodle Shadow', sans-serif;
 }
 
 header #home {
@@ -42,6 +42,7 @@ header #home {
     color: #cba328;
     width: fit-content;
     font-weight: bold;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
 }
 
 header a {
@@ -59,7 +60,6 @@ header ul {
     width: fit-content;
     justify-content: space-around;
     align-items: center;
-    font-family: 'Rubik Doodle Shadow', 'Sevillana', sans-serif;
 }
 
 header a:hover,
@@ -72,10 +72,25 @@ header a:hover,
     margin: 0;
     font-size: 4em;
     font-family: 'Rubik Doodle Shadow', cursive;
-    background-color: rgba(0, 0, 0, 0.46);
     height: 90vh;
+    display: flex;
     text-align: center;
-    line-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro p{
+    width: fit-content;
+    border-right: 5px solid;
+    height: 8vh;
+    animation: 
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+   50%{
+         border-color: transparent;
+   }
 }
 
 #intro a {
@@ -89,7 +104,10 @@ header a:hover,
 }
 
 #myName:hover {
+    transition: 200ms;
     color: #ffe601fa;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
     text-shadow: #000000 0px 0px;
 }
 
@@ -101,8 +119,10 @@ header a:hover,
 #about {
     display: flex;
     flex-direction: column;
+    background-image: url(/about.gif);
+    background-size:cover;
+    background-blend-mode: overlay;
     align-items: center;
-    background-color: rgb(0, 0, 0);
     height: auto;
     width: 100%;
     padding: 20px 0;
@@ -113,20 +133,40 @@ header a:hover,
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.412);
     height: auto;
-    width: 100%;
+    width: 70%;
     padding: 20px 0;
     font-size: 1.5em;
+    border-radius: 10px;
 }
 
 #about img {
     width: 100%;
     max-width: 350px;
     height: auto;
-    border-radius: 50%;
-    border: 10px solid #ffe601ad;
+    border-radius: 10%;
+    border: black 10px solid;
     margin: 20px;
+}
+
+#about p{
+    color: white;
+    text-shadow: #000000 0px 0px;   
+}
+
+#ready{
+    padding: 2px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#special{
+    padding: 2px;
+    background-color: gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    border-radius: 10px;
 }
 
 #about #university {
@@ -137,17 +177,25 @@ header a:hover,
 
 #about a {
     padding: 20px;
+    background-color: goldenrod;
+    border-radius: 50%;
 }
 
+#me a{
+    padding: 5px;
+    border-radius: 0;
+    color: black;
+    font-size: 20px;
+}
 
 #projects {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    height: 100vh;
     align-items: center;
+    justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .project-card {
@@ -155,10 +203,10 @@ header a:hover,
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin: 20px;
-    overflow: hidden;
-    height: 60vh;
     display: flex;
     flex-direction: column;
+    width: 30%;
+    height: 100%;
 }
 
 .project-card img {
@@ -171,6 +219,23 @@ header a:hover,
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+}
+
+.tags {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.8em;
 }
 
 .project-card h3 {
@@ -210,7 +275,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    border-radius: 10px;
+    margin:0;
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
 }
 
 #contact {
@@ -218,21 +288,27 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     color: black;
     background-color: white;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: auto;
+    height: 70vh;
     width: 70%;
 }
 
-label {
+#contact h2 {
     display: block;
     margin-bottom: 8px;
+    font-size: 30px;
 }
 
 input,
@@ -242,8 +318,9 @@ textarea {
     margin-bottom: 16px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     color: black;
+    font-size: 30px;
 }
 
 button {
@@ -311,6 +388,14 @@ button:hover {
         font-size: 2em;
         line-height: normal;
         height: 20vh;
+        display: flex;
+        
+    }
+
+    #intro p{
+        width: fit-content;
+        height: 5vh;
+        border:none; 
     }
 
     #about img {
@@ -320,6 +405,17 @@ button:hover {
     #projects{
         flex-direction: column;
         align-items: center;
+        height: 100%;
+    }
+
+
+    .project-card{
+        width: 80%;
+    }
+
+
+    .project-card img,.project-card h3{
+        width: 100%;
     }
 
     #aboutInfo {
@@ -330,5 +426,10 @@ button:hover {
 
     form {
         width: 70%;
+        height: 70%;
+    }
+
+    #contact {
+        height: 100%;
     }
 }
