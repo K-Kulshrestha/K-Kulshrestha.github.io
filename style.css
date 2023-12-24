@@ -374,6 +374,7 @@ button:hover {
     header {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     header #home {
@@ -386,16 +387,19 @@ button:hover {
 
     #intro {
         font-size: 2em;
-        line-height: normal;
         height: 20vh;
-        display: flex;
-        
+        text-align: center;
+        width: 100%;
     }
 
     #intro p{
         width: fit-content;
         height: 5vh;
         border:none; 
+    }
+
+    #about{
+        width: 100%;
     }
 
     #about img {
@@ -410,11 +414,6 @@ button:hover {
 
 
     .project-card{
-        width: 80%;
-    }
-
-
-    .project-card img,.project-card h3{
         width: 100%;
     }
 
@@ -425,11 +424,17 @@ button:hover {
     }
 
     form {
-        width: 70%;
+        width: 80%;
         height: 70%;
     }
 
     #contact {
         height: 100%;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 10px;
+        width: 100%;
     }
 }
