@@ -13,81 +13,74 @@
         <div id="loading-spinner"></div>
     </div>
     <header>
-        <h1>Kshitij Kulshrestha</h1>
-        <p>Web Developer | Designer | Student</p>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#projects">Projects</a>
+        <a id="home" href="/">KK</a>
+        <ul>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-    </nav>
+        </ul>
+    </header>
+    <div id="intro"><p>Hello! my name is <a id="myName" href="#about">Kshitij Kulshrestha</a></p>
+    </div>
     <main>
-    <section id="home">
-        <h2>Welcome to My Website</h2>
-        <p>
-        Hello! My name is Kshitij Kulshrestha and I am currently a third-year computer science student at The University of Texas at Dallas, 
-        I have a passion for technology. 
-        I'm constantly seeking opportunities to explore and acquire new skills in the tech industry.
-        I have experience creating front-end interfaces as well as developing full-stack applications.
-        </p>
-        <p>
-        When I was 8 years old, I was introduced to the world of computers and I was fascinated by the way they worked.
-        I was always curious about how the computer was able to do so many things and how it was able to process so much information.
-        I remember watching my dad and my sister playing games together on the computer and I was amazed by the fact that they were able to play games on the computer.
-        </p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects:</p>
-        <a href="https://github.com/K-Kulshrestha/PolicyPioneer">Policy Pioneer &#128279;</a>
-        <p id="role">Full Stack Developer</p>
-        <p>
-            Elevating the experience of Small businesses by making the experience more intuitive
-            <ul>
-                <li>Designed and implemented a responsive front-end using HTML, CSS, and JavaScript</li>
-                <li>Developed a back-end using Python and Flask</li>
-                <li>Integrated Map Box api and made a custom algorithm for insurance rates</li>
-                <li>Deployed the webapp using Ngrok</li>
-            </ul>
-        </p>
-        <br>
-        <a href="https://github.com/SriNethala317/NurseNav">Nurse Nav &#128279;</a>
-        <p id="role">Front End Developer</p>
-        <p>
-            Our mission is to empower and support caregivers and elderly individuals through resources and community building. We strive to promote dignity, independence, and quality of life for all individuals.
-            <ul>
-                <li>Front End Developer</li>
-                <li>Customized the user experience (UX) based on users’ needs taking into account color psychology, color contrast, and color blindness considerations with rigorous feedback and testing</li>
-                <li>Utilized a manifest file and a service worker to offload data and keep important functionalities</li>
-            </ul>    
-        </p>
-    </section>
     <section id="about">
-        <h2>About Me</h2>
-        <p>Share some information about yourself, your background, and your interests.</p>
+        <div id="aboutInfo">
+            <img src="KshitijKulshrestha.jpg">
+            <h2>Studing Computer Science @ <h2 id="university">University of Texas at Dallas</h2></h2>
+            <p>I am a cooking and fitness enthusiast</p>
+            <p>I have lost over 70 pounds</p>
+            <p>I am a self-taught programmer and a full-stack web developer</p>
+        </div>
+            <br>
+            <a href="#projects">&#9660;</a>
+        </section>
+    <section id="projects">
+        <div id="projects">
+        
+            <div class="project-card">
+                <img src="cover.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Streaks</h3>
+                    <p>A responsive and interactive web application designed to enhance user productivity through streak tracking.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <img src="cover.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Task Tracker</h3>
+                    <p>A simple and effective task management application with a built-in Pomodoro clock.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        
+            <div class="project-card">
+                <img src="cover.png" alt="Project 3">
+                <div class="project-info">
+                    <h3>Policy Pioneer</h3>
+                    <p>A full-stack insurance quote estimation platform featuring a custom algorithm, Flask backend, and a responsive HTML/CSS/JavaScript front-end.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact">
-        <h2>Contact Me</h2>
         <form action="https://formspree.io/f/xoqoopnd" method="post">
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
-        
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-        
             <button type="submit">Send Message</button>
           </form>
     </section>
     </main>
     <footer>    
-        <p>&copy; 2023 Kshitij Kulshrestha. All rights reserved.</p>
+        <p>&copy; By Yours Truly Kshitij Kulshrestha</p>
     </footer>
-
-<!-- Beta Warning -->
-<div id="beta-warning">This website is in beta. Use with caution.</div>
 </body>
 </html>

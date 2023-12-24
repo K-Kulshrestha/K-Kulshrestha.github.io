@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik+Doodle+Shadow&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.808);
     color: white;
     display: flex;
     flex-direction: column;
@@ -13,78 +20,214 @@ main {
     flex-grow: 1;
 }
 
-header {
-    background-color: black;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+a {
+    color: white;
+    text-decoration: none;
 }
 
-nav {
-    background-color: white;
+header {
     display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+header #home {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: #cba328;
+    width: fit-content;
+    font-weight: bold;
+}
+
+header a {
     padding: 10px;
     border-radius: 10px;
-    justify-content: center;
-    text-align: center;
     width: 100%;
-}
-
-nav a {
-    color: black;
     text-decoration: none;
     margin: 0 10px;
-    text-shadow: #000000 0px 0px;
-    font-size: medium;
+    font-size: 1em;
 }
 
-nav a:hover {
-    color: #ffffffcf;
+header ul {
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Rubik Doodle Shadow', 'Sevillana', sans-serif;
+}
+
+header a:hover,
+#about a:hover {
+    color: #ffe601fa;
     text-shadow: #000000 0px 0px;
 }
 
-section {
-    margin: auto;
+#intro {
+    margin: 0;
+    font-size: 4em;
+    font-family: 'Rubik Doodle Shadow', cursive;
+    background-color: rgba(0, 0, 0, 0.46);
+    height: 90vh;
+    text-align: center;
+    line-height: 90vh;
+}
+
+#intro a {
+    text-decoration: none;
+}
+
+#myName {
+    padding-left: 10px;
+    width: fit-content;
+    text-decoration: none;
+}
+
+#myName:hover {
+    color: #ffe601fa;
+    text-shadow: #000000 0px 0px;
+}
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+#aboutInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+#about img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%;
+    border: 10px solid #ffe601ad;
+    margin: 20px;
+}
+
+#about #university {
+    margin: 0;
+    color: #ffe601fa;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+}
+
+#about a {
     padding: 20px;
 }
 
-section a {
-    color: white;
-    text-decoration: none;
-    font-size: medium;
-    text-align: center;
-    background-color: blue;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
+
+#projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    flex-direction: row;
 }
 
-section #role {
-    background-color: orangered;
-    color: white;
-    padding: 0px 0px 0px 0px;
-    text-decoration: none;
-    margin: 5px;
-    font-size: medium;
-    border-radius: 5px;
-    align-items: center;
+.project-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+    overflow: hidden;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h3 {
     text-align: center;
-    width: 150px;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5em;
+    color: #3498db;
+}
+
+.project-card p {
+    text-align:var();
+    padding: 10px;
+    margin: 0;
+    color: #000;
+}
+
+.project-card .btn {
+    margin-top: auto; /* Push the button to the bottom */
+    display: block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.project-card .btn:hover {
+    background-color: #2980b9;
 }
 
 footer {
-    background-color: black;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: goldenrod;
     color: #fff;
     text-align: center;
     padding: 10px;
+    border-radius: 10px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
     color: black;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: auto;
+    width: 70%;
 }
 
 label {
@@ -100,6 +243,7 @@ textarea {
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    color: black;
 }
 
 button {
@@ -138,20 +282,53 @@ button:hover {
     animation: spin 1s linear infinite;
 }
 
-/* Beta Warning */
-#beta-warning {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: orangered;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: small;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header #home {
+        font-size: 2.5em;
+    }
+
+    header a {
+        font-size: 1em;
+    }
+
+    #intro {
+        font-size: 2em;
+        line-height: normal;
+        height: 20vh;
+    }
+
+    #about img {
+        max-width: 80%;
+    }
+
+    #projects{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #aboutInfo {
+        font-size: 0.7em;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    form {
+        width: 70%;
+    }
 }
