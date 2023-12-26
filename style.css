@@ -82,7 +82,7 @@ header a:hover,
 #intro p{
     width: fit-content;
     border-right: 5px solid;
-    height: 5.5vh;
+    height: 7vh;
     animation: 
     cursor .4s step-end infinite alternate;
 }
@@ -414,8 +414,21 @@ button:hover {
     color: #000;
 }
 
+@media only screen and (max-width:1585px){
+    .project-card{
+        width: 100%;
+    }
+}
+
 
 /* Media Queries for smaller screens */
+@media only screen and (max-width: 1431px) {
+    #intro p{
+        border: none;
+    }
+    
+}
+
 @media only screen and (max-width: 768px) {
 
     body{
