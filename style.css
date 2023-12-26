@@ -414,9 +414,155 @@ button:hover {
     color: #000;
 }
 
-@media only screen and (max-width:1585px){
-    .project-card{
+#back-home a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#personal-page #titles{
+    font-size: 24px;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    color: #000;
+    text-shadow: #000000 0px 0px;
+    text-align: center;
+}
+
+#personal-page #titles ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#personal-page #titles a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 10ms;
+}
+
+#personal-page #titles a:hover{
+    color: black;
+    font-size: 18px;
+    text-shadow: #000000 0px 0px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#personal-page main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 20%;
+    max-width: 19%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin: 30px;
+    vertical-align: middle;
+    width: 100%;
+    border: #000 8px solid;
+    border-radius: 10px;
+    transform: perspective(600px) rotateY(-32deg);
+  }
+
+    .column img:hover{
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .column a{
+        cursor: pointer;
+    }
+
+    #personal-page section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         width: 100%;
+        height: 50vh;
+        border-radius: 20px;
+        margin-top: 10px;
+    }
+
+    #user-experience{
+        background-color: #000;
+        color: white;
+    }
+
+    #sase{
+        background-color: #000;
+        color: white;
+    }
+
+    #fitness{
+        background-color: #000;
+        color: white;
+    }
+
+    #hacker{
+        background-color: #000;
+        color: white;
+    }
+
+    #comet{
+        background-color: #000;
+        color: white;
+    }
+
+    #culture{
+        background-color: #000;
+        color: white;
+    }
+
+    #this-year{
+        background-color: #000;
+        color: white;
+    }
+
+    #random{
+        background-color: #000;
+        color: white;
+    }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+@media only screen and (max-width:1587px){
+    .project-card{
+        display: flex;
+        flex-direction: column;
     }
 }
 
