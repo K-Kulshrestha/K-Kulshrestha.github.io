@@ -106,7 +106,7 @@ header a:hover,
 #myName:hover {
     transition: 200ms;
     color: #ffe601fa;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.41);
     border-radius: 10px;
     text-shadow: #000000 0px 0px;
 }
@@ -189,6 +189,18 @@ header a:hover,
     font-size: 20px;
 }
 
+#project{
+    background-color: #6667ab;
+
+}
+
+#project-tag{
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+    font-size: 54px;
+}
+
 #projects {
     margin: 0 auto;
     padding: 20px;
@@ -200,10 +212,10 @@ header a:hover,
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: rgba(230, 226, 226, 0.872);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin: 20px;
+    border-radius: 10px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -214,29 +226,35 @@ header a:hover,
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
+    border-radius: 10px;
 }
 
 .project-info {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    height: 400px;
+    font-size: 1.2em;
 }
 
 .tags {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    height: 100px;
 }
 
 .tag {
     display: inline-block;
     padding: 5px 10px;
     margin: 5px;
-    background-color: #3498db;
+    background-color: #be29ec;
     color: #fff;
-    border-radius: 4px;
-    font-size: 0.8em;
+    border-radius: 10px;
+    height: 30px;   
+    width: fit-content;
 }
 
 .project-card h3 {
@@ -244,12 +262,17 @@ header a:hover,
     padding: 10px;
     margin: 0;
     font-size: 1.5em;
-    color: #3498db;
+    color: #be29ec;
+}
+
+.project-card #project-text{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.1em;
 }
 
 .project-card p {
-    text-align:var();
-    padding: 10px;
     margin: 0;
     color: #000;
 }
@@ -258,25 +281,31 @@ header a:hover,
     margin-top: auto; /* Push the button to the bottom */
     display: block;
     padding: 10px;
-    background-color: #3498db;
+    background-color: #be29ec;
     color: #fff;
     text-align: center;
     text-decoration: none;
     border-radius: 0 0 8px 8px;
+    height: 30px;
+    line-height: 30px;
 }
 
 .project-card .btn:hover {
-    background-color: #2980b9;
+    background-color: 	#d896ff;
 }
 
 footer {
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
     background-color: goldenrod;
-    color: #fff;
+    color: black;
     text-align: center;
     padding: 10px;
     margin:0;
+}
+
+footer a{
+    color: black;
 }
 
 footer p{
@@ -290,6 +319,7 @@ footer p{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: #660066;
 }
 
 form {
@@ -370,72 +400,104 @@ button:hover {
     }
 }
 
+
+#personal-page{
+    background-color: gold;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin:0;
+
+}
+
+#personal-page header{
+    color: #000;
+}
+
+
 /* Media Queries for smaller screens */
 @media only screen and (max-width: 768px) {
+
+    body{
+        font-size: 16px;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        padding: 10px 0;
     }
 
     header #home {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     header a {
         font-size: 1em;
+        padding: 8px;
+    }
+
+    header ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
     #intro {
-        font-size: 2em;
-        height: 20vh;
+        font-size: 2.5em;
+        height: 100vh;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
     #intro p{
         width: fit-content;
-        height: 5vh;
+        height: 4vh;
         border:none; 
     }
 
-    #about{
-        width: 100%;
-    }
-
     #about img {
-        max-width: 80%;
+        max-width: 100%;
+        border: none;
     }
 
-    #projects{
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
+    #aboutInfo{
+        width: 90%;
+        font-size: 1.2em;
+        border: none;
     }
-
 
     .project-card{
         width: 100%;
-    }
-
-    #aboutInfo {
         font-size: 0.7em;
-        flex-direction: column;
-        text-align: center;
     }
 
     form {
-        width: 80%;
-        height: 70%;
+        width: 90%;
+        height: auto;
     }
 
-    #contact {
-        height: 100%;
-        width: 100%;
+    input,
+    textarea{
+        font-size: 18px;
+    
     }
+
+    #projects{
+        padding:10px;
+    }
+
+    #contact h2{
+        font-size: 24px;
+    }
+
+    
 
     footer {
-        margin-top: 10px;
-        width: 100%;
+        padding: 5px;
     }
 }
