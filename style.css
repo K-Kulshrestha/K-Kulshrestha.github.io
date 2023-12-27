@@ -629,6 +629,7 @@ button:hover {
         padding: 10px 0;
     }
 
+
     header #home {
         font-size: 1.5em;
     }
@@ -642,16 +643,24 @@ button:hover {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: fit-content;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li{
+        margin: 0;
     }
 
     #intro {
         font-size: 2.5em;
-        height: 100vh;
+        height: 75vh;
         text-align: center;
-        justify-content: center;
-        align-items: center;
         width: 100%;
+        justify-content: start;
     }
 
     #intro p{
@@ -699,5 +708,44 @@ button:hover {
 
     footer {
         padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    #intro {
+        font-size: 2em;
+        height: 75vh;
+        text-align: center;
+        width: 100%;
+    }
+
+    #intro p{
+        width: fit-content;
+        height: 4vh;
+        border:none; 
+    }
+
+    #about img {
+        max-width: 100%;
+        border: none;
+    }
+
+    #aboutInfo{
+        width: 90%;
+        font-size: 0.8em;
+        border: none;
+    }
+
+    .project-card{
+        width: 100%;
+        font-size: 0.7em;
+    }
+    
+    .tags{
+        height: 50%;
+    }
+
+    .project-info{
+        height: 100%;
     }
 }
