@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #000;
     margin: 0;
     padding: 0;
@@ -121,7 +121,7 @@ header a:hover,
 #about {
     display: flex;
     flex-direction: column;
-    background-image: url(/about.gif);
+    background: linear-gradient(#000, #9198e5);
     background-size:cover;
     background-blend-mode: overlay;
     align-items: center;
@@ -142,7 +142,6 @@ header a:hover,
     width: 70%;
     padding: 20px 0;
     font-size: 1.5em;
-    border: black 10px solid;
     border-radius: 10px;
 }
 
@@ -151,7 +150,6 @@ header a:hover,
     max-width: 350px;
     height: auto;
     border-radius: 10%;
-    border: black 10px solid;
     margin: 20px;
 }
 
@@ -178,10 +176,12 @@ header a:hover,
     font-family: 'Rubik Doodle Shadow', sans-serif;
 }
 
-#about a {
-    padding: 20px;
-    background-color: goldenrod;
-    border-radius: 50%;
+#about #aboutInfo a {
+    padding: 0px;
+    color: white;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 #me a{
@@ -192,7 +192,7 @@ header a:hover,
 }
 
 #project{
-    background-color: #6667ab;
+    background: linear-gradient(#9198e5, #660066 90%);
 
 }
 
@@ -214,8 +214,6 @@ header a:hover,
 }
 
 .project-card {
-    background-color: rgba(230, 226, 226, 0.872);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     margin: 15px;
     display: flex;
@@ -228,7 +226,6 @@ header a:hover,
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
-    border-radius: 10px;
 }
 
 .project-info {
@@ -264,7 +261,7 @@ header a:hover,
     padding: 10px;
     margin: 0;
     font-size: 1.5em;
-    color: #be29ec;
+    color: white;
 }
 
 .project-card #project-text{
@@ -283,31 +280,30 @@ header a:hover,
     margin-top: auto; /* Push the button to the bottom */
     display: block;
     padding: 10px;
-    background-color: #be29ec;
     color: #fff;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     border-radius: 0 0 8px 8px;
     height: 30px;
     line-height: 30px;
 }
 
 .project-card .btn:hover {
-    background-color: 	#d896ff;
+    background-color: #be29ec;
 }
 
 footer {
     font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: goldenrod;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 10px;
     margin:0;
 }
 
 footer a{
-    color: black;
+    color: white;
 }
 
 footer p{
@@ -321,7 +317,7 @@ footer p{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #660066;
+    background: linear-gradient(#660066, #000);
 }
 
 form {
@@ -329,11 +325,9 @@ form {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: black;
-    background-color: white;
+    color: white;
     padding: 20px;
     border-radius: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 70vh;
     width: 70%;
 }
@@ -350,7 +344,7 @@ textarea {
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 10px;
     color: black;
     font-size: 30px;
