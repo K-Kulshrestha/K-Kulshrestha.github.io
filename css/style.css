@@ -79,6 +79,7 @@ header a:hover,
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
+    background:linear-gradient(#000, #660066);
 }
 
 #intro p{
@@ -108,7 +109,6 @@ header a:hover,
 #myName:hover {
     transition: 200ms;
     color: #ffe601fa;
-    background-color: rgba(255, 255, 255, 0.41);
     border-radius: 10px;
     text-shadow: #000000 0px 0px;
 }
@@ -121,7 +121,7 @@ header a:hover,
 #about {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(#000, #9198e5);
+    background: linear-gradient(#660066, #8a92ea);
     background-size:cover;
     background-blend-mode: overlay;
     align-items: center;
@@ -192,8 +192,7 @@ header a:hover,
 }
 
 #project{
-    background: linear-gradient(#9198e5, #660066 90%);
-
+    background: linear-gradient(#8a92ea, #660066);
 }
 
 #project-tag{
