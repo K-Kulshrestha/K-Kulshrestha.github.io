@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 </head>
 <div id="loading">
     <div id="loading-spinner"></div>
@@ -14,7 +18,7 @@
 <body id="personal-page">
 <header id="personalheader">
         <a id="home" href="/">KK</a>
-        <span id="back-home"><a href="/">home</a></span>
+        <span data-cursor-img="/images/home.jpg" id="back-home"><a href="/">home</a></span>
 </header>
 <h1>more me</h1>
 <div id="blog">
@@ -33,235 +37,90 @@
 <main>
     <div class="row">
         <div class="column">
-          <a href="#sase"><img src="/images/SASEcarry.jpg"></a>
-          <a href="#culture"><img src="/images/AtsaPic.jpg"></a>
+          <a data-cursor-text="SASE" href="#sase"><img src="/images/SASEcarry.jpg"></a>
+          <a data-cursor-text="ATSA" href="#culture"><img src="/images/AtsaPic.jpg"></a>
         </div>
         <div class="column">
-        <a href="#culture"><img src="/images/FallBash.jpg"></a>
-        <a href="#hacker"><img src="/images/HackUTD.JPG"></a>
+        <a data-cursor-text="ISA" href="#culture"><img src="/images/FallBash.jpg"></a>
+        <a data-cursor-text="HackUTDX" href="#hacker"><img src="/images/HackUTD.JPG"></a>
         </div>
         <div class="column">
-        <a href="#user-experience"><img src="/images/UXConference.JPG"></a>
-        <a href="#fitness"><img src="/images/Freshmenyear.jpg"></a>
+        <a data-cursor-text="UI/UX" href="#user-experience"><img src="/images/UXConference.JPG"></a>
+        <a data-cursor-text="Fitness Journey" href="#fitness"><img src="/images/Freshmenyear.jpg"></a>
         </div>
         <div class="column">
-        <a href="#this-year"><img src="/images/Shazjpg.jpg"></a>
+        <a data-cursor-text="Current Year" href="#this-year"><img src="/images/Shazjpg.jpg"></a>
         </div>
         <div class="column">
-        <a href="#comet"><img src="/images/UTDMascot.jpg"></a>
-        <a href="#random"><img src="/images/RandomDallas.jpg"></a>
+        <a data-cursor-text="UTD" href="#comet"><img src="/images/UTDMascot.jpg"></a>
+        <a data-cursor-text="Misc" href="#random"><img src="/images/RandomDallas.jpg"></a>
           </div>
       </div>
 </main>
 </div>
 <section id="user-experience">
-    <h1>User Experience (UI/UX)</h1>
-    <p>As a designer, I have always been fascinated by the way people interact with the world around</p>
-    <p>So I joined the <a href="">user experience club</a> at University of Texas at Dallas and i work as the student relations officer.</p>
-    <p>I have had the pleasure interacting with not only the students but business professionals on the mutual basis of love for UX.</p>
-    <p>I love being part of the club because it really broadens my pespective.</p>
-    <p>We hold a number of events fromt the UX conference being my personal favourite to the UX workshops and the UX design challenge.</p>
-    <p>I have learnt a lot from the club and I am really grateful for the opportunity to be part of it.</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+    
 </section>
 <section id="sase">
-    <h1>Society of Asian Scientists and Engineers</h1>
-    <p>Being Asian is something I am proud of and always wanted to share that culture</p>
-    <p>So I joined the <a href="">SASE</a> at University of Texas at Dallas and i work as the student relations officer.</p>
-    <p>I have had the opportunity to connect and learn more about diverse cultures in Asia.</p>
-    <p>We attended the <a href="">SASE National Convention</a> in 2023 and it was a great experience to meet people from all over the country.</p>
-    <p>I have learnt a lot from the club and I am really grateful for the opportunity to be part of it.</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+    
 </section>
 <section id="fitness">
-    <h1>Weight Loss</h1>
-    <p>Being fit is something I have always wanted to be and I have been working on it for a while now</p>
-    <p>I have lost over 70 pounds ever since I joined college and I am really proud of it.</p>
-    <p>I have changed my lifestyle and the most significant change I made was my diet.</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+    
 </section>
 <section id="hacker">
-    <h1>Hackathons</h1>
-    <p>I have always been fascinated by the idea of building something from scratch and hackathons are the perfect place to do that</p>
-    <p>I have attended a number of hackathons and I have learnt a lot from them.</p>
-    <p>It all started with HackUTD VIII my first ever hackathon in college I was engulfed in brainstorming for 24 hours straight.</p>
-    <p>Although we did not end up building anything the experience was eye opening and I learnt thinking under pressure.</p>
-    <p>I have attended a number of hackathons since then and I have learnt a lot from them.</p>
-    <p>My second hackathon was Axxess Hack 2022 my team and I built Nurse Nav. To make healthcare more accessible to everyone.</p>
-    <p>My third hackathon was HackUTD X and I built a full stack dashboard with my own algorithm.</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+    
 </section>
 <section id="comet">
-    <h1>Student at University of Texas at Dallas</h1>
-    <p>I am currently a student at University of Texas at Dallas and I am pursuing a degree in Computer Science</p>
-    <p>I am a junior and I have learnt a lot from everyone around me</p>
-    <p>In freshmen year I started with volunteering with Unicef because my friend encouraged me to join him</p>
-    <p>In sophmore year I became more career oriented and started a part time job as the Engagment Representative and worked to raise funds for campus facilities by networking with alumni</p>
-    <p>In junior year I started working as a student relations officer for UX club and professional committee officer for SASE</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+   
 </section>
 <section id="culture">
-    <h1>Agaram Tamil Student Association</h1>
-    <p>I am currently a member of Agaram Tamil Student Association at University of Texas at Dallas</p>
-    <p>I have learnt a lot about Tamil culture and I have met a lot of amazing people</p>
-    <h1>Indian Students Association</h1>
-    <p>I have always been fascinated by the diverse cultures of India</p>
-    <p>I have learnt a lot about variety of different Indian culture and I have met a lot of amazing people</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+   
 </section>
 <section id="this-year">
-    <h1>Current year</h1>
-    <p>I have been creating more and more</p>
-    <p>I have been working on a number of projects and I have learnt a lot from them</p>
-    <p>I worked with my team in Software Engineering class and made dynafit</p>
-    <p>I learned to work with UNIX</p>
-    <p>I learned to work with databases</p>
-    <p>I learned to work with APIs</p>
-    <p>I learned to work with React</p>
-    <p>I learned to work with NEXTJs</p>
-    <p>I learned Tailwind CSS</p>
-    <p>I learned to work with NodeJS</p>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+   
 </section>
 <section id="random">
-    <h1>Before College</h1>
-    <div class="row-section">
-        <div class="column-section">
-          <a<img src="/images/cover.png"></a>
-          <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-        </div>
-        <div class="column-section">
-        <a><img src="/images/cover.png"></a>
-          </div>
-      </div>    
+   
 </section>
+<script>
+  const cursor = new MouseFollower({
+ el: null,
+ container: document.body,
+ className: 'mf-cursor',
+ innerClassName: 'mf-cursor-inner',
+ textClassName: 'mf-cursor-text',
+ mediaClassName: 'mf-cursor-media',
+ mediaBoxClassName: 'mf-cursor-media-box',
+ iconSvgClassName: 'mf-svgsprite',
+ iconSvgNamePrefix: '-',
+ iconSvgSrc: '',
+ dataAttr: 'cursor',
+ hiddenState: '-hidden',
+ textState: '-text',
+ iconState: '-icon',
+ activeState: '-active',
+ mediaState: '-media',
+ stateDetection: {
+     '-pointer': 'a,button',
+     '-hidden': 'iframe'
+ },
+ visible: true,
+ visibleOnState: false,
+ speed: 0.55,
+ ease: 'expo.out',
+ overwrite: true,
+ skewing: 0,
+ skewingText: 2,
+ skewingIcon: 2,
+ skewingMedia: 2,
+ skewingDelta: 0.001,
+ skewingDeltaMax: 0.15,
+ stickDelta: 0.15,
+ showTimeout: 20,
+ hideOnLeave: true,
+ hideTimeout: 300,
+ hideMediaTimeout: 300
+});     
+ </script>
 </body>
 </html>

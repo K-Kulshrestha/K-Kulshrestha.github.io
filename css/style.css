@@ -6,6 +6,11 @@ html {
     user-select: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+  }
+
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #000;
@@ -27,6 +32,16 @@ a {
     text-decoration: none;
 }
 
+.mf-cursor{
+    color: white;
+}
+
+.mf-cursor .mf-cursor-text{
+    color: black;
+    font-size: 15px;
+    font-weight: 900;
+}
+
 header {
     display: flex;
     height: 100%;
@@ -34,6 +49,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 0;
+    font-weight: 900;
 }
 
 header #home {
@@ -102,13 +118,12 @@ header a:hover,
 
 #myName {
     padding-left: 10px;
+    color: #ffe601fa;
     width: fit-content;
     text-decoration: none;
 }
 
 #myName:hover {
-    transition: 200ms;
-    color: #ffe601fa;
     border-radius: 10px;
     text-shadow: #000000 0px 0px;
 }
@@ -206,7 +221,7 @@ header a:hover,
     margin: 0 auto;
     padding: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -214,11 +229,13 @@ header a:hover,
 
 .project-card {
     border-radius: 10px;
-    margin: 15px;
+    margin: 40px;
     display: flex;
     flex-direction: column;
     width: 30%;
     height: 100%;
+    justify-content: start;
+    position: relative;
 }
 
 .project-card img {
@@ -228,15 +245,14 @@ header a:hover,
 }
 
 .project-info {
-    flex-grow: 1;
     display: flex;
-    flex-direction: column;
-    height: 400px;
     font-size: 1.2em;
+    flex-direction: column;
+    height: 85vh;
 }
 
 .tags {
-    margin-top: 10px;
+    margin-top: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,8 +273,8 @@ header a:hover,
 
 .project-card h3 {
     text-align: center;
-    padding: 10px;
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
     font-size: 1.5em;
     color: white;
 }
@@ -273,18 +289,24 @@ header a:hover,
 .project-card p {
     margin: 0;
     color: #000;
+    line-height: 1.5;
+}
+
+.project-card .project-info {
+    flex-grow: 1; /* Allow .project-info to grow and take available space */
 }
 
 .project-card .btn {
-    margin-top: auto; /* Push the button to the bottom */
     display: block;
     padding: 10px;
     color: #fff;
     text-align: center;
     text-decoration: underline;
     border-radius: 0 0 8px 8px;
-    height: 30px;
-    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%);
 }
 
 .project-card .btn:hover {
@@ -397,8 +419,8 @@ button:hover {
 
 
 #personal-page{
-    background-color: gold;
-    color: black;
+    background:linear-gradient(#000, rgb(186, 160, 10), #000);
+    color: white;
     text-align: center;
     padding: 10px;
     margin:0;
@@ -410,7 +432,7 @@ button:hover {
 }
 
 #back-home a{
-    color: black;
+    color: wheat;
     text-decoration: none;
     font-size: 16px;
 }
@@ -418,7 +440,7 @@ button:hover {
 #personal-page #titles{
     font-size: 24px;
     font-family: 'Rubik Doodle Shadow', sans-serif;
-    color: #000;
+    color: wheat;
     text-shadow: #000000 0px 0px;
     text-align: center;
 }
@@ -430,7 +452,7 @@ button:hover {
 }
 
 #personal-page #titles a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
@@ -475,7 +497,6 @@ button:hover {
     margin-left: 0;
     vertical-align: middle;
     width: 100%;
-    border: #000 8px solid;
     border-radius: 10px;
     transform: perspective(600px) rotateY(-32deg);
   }
@@ -497,10 +518,6 @@ button:hover {
         margin-top: 10px;
     }
 
-    #user-experience{
-        background-color: #000;
-        color: white;
-    }
 
     .row-section{
         margin-top: 4vh;
@@ -528,39 +545,35 @@ button:hover {
         transform: perspective(600px) rotateY(-32deg);
     }
 
+    #user-experience{
+
+    }
+
     #sase{
-        background-color: #000;
-        color: white;
     }
 
     #fitness{
-        background-color: #000;
-        color: white;
+
     }
 
     #hacker{
-        background-color: #000;
-        color: white;
+
     }
 
     #comet{
-        background-color: #000;
-        color: white;
+
     }
 
     #culture{
-        background-color: #000;
-        color: white;
+  
     }
 
     #this-year{
-        background-color: #000;
-        color: white;
+
     }
 
     #random{
-        background-color: #000;
-        color: white;
+
     }
 
   /* Responsive layout - makes a two column-layout instead of four columns */
@@ -677,9 +690,28 @@ button:hover {
         border: none;
     }
 
+    .projects{
+        width: 100%;
+    }
+
     .project-card{
         width: 100%;
         font-size: 0.7em;
+    }
+
+    .project-info{
+        height: 100%;
+    }
+
+    .project-card .btn {
+        position: relative; /* Change to relative positioning */
+        margin-top: auto; /* Push the button to the bottom */
+        left: auto; /* Reset left positioning */
+        transform: none; /* Reset transform */
+    }
+
+    .tags{
+        font-size: 0.9em;
     }
 
     form {
@@ -700,7 +732,6 @@ button:hover {
     #contact h2{
         font-size: 24px;
     }
-
     
 
     footer {
@@ -740,9 +771,5 @@ button:hover {
     
     .tags{
         height: 50%;
-    }
-
-    .project-info{
-        height: 100%;
     }
 }

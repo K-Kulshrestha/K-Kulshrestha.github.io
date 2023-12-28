@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css">
     <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 </head>
 <body>
     <div id="loading">
@@ -18,13 +22,13 @@
         <ul>
         <a href="#top">about</a>
         <a href="#projects">projects</a>
-        <a href="https://drive.google.com/file/d/1L_rcAP8dRawk9INO7TUNw0S_ck8wCutT/view?usp=sharing">resume</a>
+        <a data-cursor-text="external link" href="https://drive.google.com/file/d/1L_rcAP8dRawk9INO7TUNw0S_ck8wCutT/view?usp=sharing">resume</a>
         <a href="#navC">contact</a>
         </ul>
     </header>
     <section id="intro">
     <img src="/images/WavingCat.gif" alt="">
-    <p>hello! my name is <a id="myName" href="#top">KSHITIJ KULSHRESTHA</a>.</p>
+    <p>hello! my name is <a  data-cursor-img="/images/KshitijKulshrestha.jpg" id="myName" href="#top">KSHITIJ KULSHRESTHA.</a></p>
     </section>
     <main>
     <section id="about">
@@ -33,7 +37,7 @@
             <img src="/images/KshitijKulshrestha.jpg">
             <h2>Computer Science<h2 id="university">@ University of Texas at Dallas</h2></h2>
             <p id="special">Developer and Designer</p>
-            <div id="me"><a href="/html/about.html">MORE ME?</a></div>
+            <div id="me"><a  data-cursor-img="/images/cover.png" href="/html/about.html">MORE ME?</a></div>
         </div>
             <br>
         </section>
@@ -41,8 +45,8 @@
         <h1 id="project-tag">projects</h1>
         <div id="projects">
             <div class="project-card">
-                <img id="navHere" src="/images/cover.png" alt="Streaks">
                 <div class="project-info">
+                    <img id="navHere" src="/images/cover.png" alt="Streaks">
                     <h3>Streaks</h3>
                     <div class="tags">
                         <span class="tag">Streak Tracking</span>
@@ -54,7 +58,7 @@
                     </div>
                     <div id="project-text">
                     <p>
-                        Embark on a productivity revolution with our sleek web app—an interactive marvel designed to elevate your 
+                        An interactive web app designed to elevate your 
                         efficiency through seamless streak tracking. Unleash the power of simplicity fused with sophistication, 
                         redefining your daily routine effortlessly. Maximize productivity with a touch of elegance, making every task a triumph.
                     </p>
@@ -64,8 +68,8 @@
             </div>
         
             <div class="project-card">
-                <img src="/images/cover.png" alt="TastTracker">
                 <div class="project-info">
+                    <img src="/images/cover.png" alt="TastTracker">
                     <h3>Task Tracker</h3>
                     <div class="tags">
                         <span class="tag">Task Management</span>
@@ -85,8 +89,8 @@
             </div>
         
             <div class="project-card">
-                <img src="/images/cover.png" alt="PolicyPioneer">
                 <div class="project-info">
+                    <img src="/images/cover.png" alt="PolicyPioneer">
                     <h3>Policy Pioneer</h3>
                     <div class="tags">
                         <span class="tag">Full-Stack</span>
@@ -109,8 +113,8 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="/images/cover.png" alt="NurseNav">
                 <div class="project-info">
+                    <img src="/images/cover.png" alt="NurseNav">
                     <h3>Nurse Nav</h3>
                     <div class="tags">
                     <span class="tag">Front End</span>
@@ -146,5 +150,45 @@
         <p>&copy; Kshitij Kulshrestha 2023</p>    
         <p><a href="https://github.com/K-Kulshrestha">Github | </a> <a href="https://www.linkedin.com/in/kshitijkulshrestha/">Linkedin | </a><a href="mailto:kshitijkuls6@gmail.com">Email</a></p>
     </footer>
+    <script>
+     const cursor = new MouseFollower({
+    el: null,
+    container: document.body,
+    className: 'mf-cursor',
+    innerClassName: 'mf-cursor-inner',
+    textClassName: 'mf-cursor-text',
+    mediaClassName: 'mf-cursor-media',
+    mediaBoxClassName: 'mf-cursor-media-box',
+    iconSvgClassName: 'mf-svgsprite',
+    iconSvgNamePrefix: '-',
+    iconSvgSrc: '',
+    dataAttr: 'cursor',
+    hiddenState: '-hidden',
+    textState: '-text',
+    iconState: '-icon',
+    activeState: '-active',
+    mediaState: '-media',
+    stateDetection: {
+        '-pointer': 'a,button',
+        '-hidden': 'iframe'
+    },
+    visible: true,
+    visibleOnState: false,
+    speed: 0.55,
+    ease: 'expo.out',
+    overwrite: true,
+    skewing: 0,
+    skewingText: 2,
+    skewingIcon: 2,
+    skewingMedia: 2,
+    skewingDelta: 0.001,
+    skewingDeltaMax: 0.15,
+    stickDelta: 0.15,
+    showTimeout: 20,
+    hideOnLeave: true,
+    hideTimeout: 300,
+    hideMediaTimeout: 300
+});     
+    </script>
 </body>
 </html>

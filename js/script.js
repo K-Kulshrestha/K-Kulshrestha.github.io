@@ -23,7 +23,6 @@ function updateLoadingText() {
 setTimeout(function () {
     document.getElementById('loading').style.display = 'none';
     document.getElementById('enter-website').style.display = 'block';
-    document.body.style.overflow = 'auto'; // Restore scroll bars
 }, 2000); // Adjust the delay as needed
 
 // Update loading text periodically
