@@ -139,10 +139,10 @@ header a:hover,
     text-align: center;
     background-color: rgba(0, 0, 0, 0.412);
     height: auto;
-    width: 70%;
+    width: 50%;
     padding: 20px 0;
     font-size: 1.5em;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #about img {
@@ -350,11 +350,11 @@ textarea {
 }
 
 button {
-    background-color: #4caf50;
+    background-color: #328235;
     color: #fff;
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
@@ -599,7 +599,9 @@ button:hover {
     .project-card{
         display: flex;
         flex-direction: column;
+        width: 50vh;
     }
+
 }
 
 
