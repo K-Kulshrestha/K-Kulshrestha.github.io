@@ -42,6 +42,7 @@ a {
     font-weight: 900;
 }
 
+
 header {
     display: flex;
     height: 100%;
@@ -119,6 +120,8 @@ header a:hover,
 #myName {
     padding-left: 10px;
     color: #ffe601fa;
+    background-color: #cba328;
+    background-clip: text;
     width: fit-content;
     text-decoration: none;
 }
@@ -248,7 +251,7 @@ header a:hover,
     display: flex;
     font-size: 1.2em;
     flex-direction: column;
-    height: 85vh;
+    height: calc(100% - 60px);
 }
 
 .tags {
@@ -303,10 +306,7 @@ header a:hover,
     text-align: center;
     text-decoration: underline;
     border-radius: 0 0 8px 8px;
-    position: absolute;
-    bottom: 0;
-    left: 50%; /* Center the button horizontally */
-    transform: translateX(-50%);
+    margin-top: auto;
 }
 
 .project-card .btn:hover {
@@ -513,36 +513,18 @@ button:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: 60vh;
         border-radius: 20px;
         margin-top: 10px;
-    }
-
-
-    .row-section{
-        margin-top: 4vh;
-        display: flex;
-        flex-direction: row;
+        margin-bottom: 10px;
         align-items: center;
         justify-content: center;
-        width: 100%;
-        height: fit-content;
     }
 
-    .column-section{
-        flex: 20%;
-        width: 20%;
-        padding: 0 4px;
-        width: fit-content;
-    }
-
-    .column-section img{
-        margin: 0;
-        vertical-align: middle;
-        width: 100%;
-        border: #000 8px solid;
+    #personal-page section img{
+        width: 650px;
+        height: 500px;
         border-radius: 10px;
-        transform: perspective(600px) rotateY(-32deg);
     }
 
     #user-experience{
@@ -719,6 +701,10 @@ button:hover {
 
     body{
         font-size: 16px;
+    }
+
+    .mf-cursor{
+        display: none;
     }
 
     header {
