@@ -527,35 +527,10 @@ button:hover {
         border-radius: 10px;
     }
 
-    #user-experience{
-
-    }
-
-    #sase{
-    }
-
-    #fitness{
-
-    }
-
-    #hacker{
-
-    }
-
-    #comet{
-
-    }
-
-    #culture{
-  
-    }
-
-    #this-year{
-
-    }
-
-    #random{
-
+    #personal-page #caption{
+        font-size: 24px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color: #000;
     }
 
     #project-page{
