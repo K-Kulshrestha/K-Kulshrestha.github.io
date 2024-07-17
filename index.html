@@ -3,192 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kshitij Kulshrestha</title>
+    <title>K</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <div id="loading">
-        <p id="loading-text">Hmm...</p>
-        <div id="loading-spinner"></div>
-    </div>
-    <header>
-        <a id="home" href="/">KK</a>
-        <ul>
-        <a href="#top">about</a>
-        <a href="#projects">projects</a>
-        <a data-cursor-text="external link" href="https://drive.google.com/file/d/14Ptb5k22oSaIQW_A1WAixHxpEdzdRU2g/view?usp=sharing" target="_blank">resume</a>
-        <a href="#navC">contact</a>
+    <nav>
+        <a id="logo" href="/html/kshitij.html"><i>Kshitij K / <span id="hindi">क्षितिज</span></i></a>
+        <div id="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+        <ul id="nav-links">
+            <div id="close-btn" onclick="toggleMenu()">&#10005;</div> <!-- Close button -->
+            <a id="works" href="/html/projects.html">Works</a>  
+            <a id="connect" href="/html/about.html">About</a>  
+            <a id="connect" href="/html/contact.html">Contact</a>
         </ul>
-    </header>
+    </nav>
+    <div id="particle-container">
     <section id="intro">
-    <img src="/images/WavingCat.gif" alt="">
-    <p>hello! my name is <a  data-cursor-img="/images/KshitijKulshrestha.jpg" id="myName" href="#top">KSHITIJ KULSHRESTHA.</a></p>
-    </section>
-    <main>
-    <section id="about">
-        <div id="aboutInfo">
-            <h1 id="top">about me</h1>
-            <img src="/images/KshitijKulshrestha.jpg">
-            <h2>Computer Science<h2 id="university">@ University of Texas at Dallas</h2></h2>
-            <p id="special">Developer and Designer</p>
-            <div id="me"><a  data-cursor-img="/images/cover.png" href="/html/about.html">MORE ME?</a></div>
-        </div>
-            <br>
-        </section>
-    <section id="project">
-        <h1 id="project-tag">projects</h1>
-        <div id="projects">
-            <div class="project-card">
-                <div class="project-info">
-                    <img id="navHere" src="/images/cover.png" alt="Streaks">
-                    <h3>Streaks</h3>
-                    <div class="tags">
-                        <span class="tag">Streak Tracking</span>
-                        <span class="tag">Productivity</span>
-                        <span class="tag">Web App</span>
-                        <span class="tag">MongoDb</span>
-                        <span class="tag">User Authentication</span>
-                        <span class="tag">Bcrypt</span>
-                    </div>
-                    <div id="project-text">
-                    <p>
-                        An interactive web app designed to elevate your 
-                        efficiency through seamless streak tracking. Unleash the power of simplicity fused with sophistication, 
-                        redefining your daily routine effortlessly. Maximize productivity with a touch of elegance, making every task a triumph.
-                    </p>
-                    </div>
-                    <a class="btn">Learn More&#128274;</a>
-                </div>
-            </div>
-        
-            <div class="project-card">
-                <div class="project-info">
-                    <img src="/images/cover.png" alt="TastTracker">
-                    <h3>Task Tracker</h3>
-                    <div class="tags">
-                        <span class="tag">Task Management</span>
-                        <span class="tag">Productivity</span>
-                        <span class="tag">Pomodoro</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag"><a data-cursor-text="external link" href="https://k-kulshrestha.github.io/Task-Tracker/">Live Demo</a></span>
-                    </div>
-                    <div id="project-text">
-                    <p>
-                        Introducing a streamlined task management app with a built-in Pomodoro clock—an elegant solution for effective productivity.
-                         Seamlessly organize your tasks and boost focus with the power of the Pomodoro technique. Simplify your workflow, stay on 
-                         track, and conquer your to-do list with style and efficiency.</p>
-                    </div>
-                    <a class="btn">Learn More&#128274;</a>
-                </div>
-            </div>
-        
-            <div class="project-card">
-                <div class="project-info">
-                    <img src="/images/cover.png" alt="PolicyPioneer">
-                    <h3>Policy Pioneer</h3>
-                    <div class="tags">
-                        <span class="tag">Full-Stack</span>
-                        <span class="tag">Insurance</span>
-                        <span class="tag">Custom Algorithm</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                    </div>
-                    <div id="project-text">
-                    <p>
-                        A full-stack insurance dashboard, boasting a proprietary algorithm. 
-                        Elevate your decision-making process with real-time insights and a responsive interface, 
-                        seamlessly merging technology and aesthetics. Experience the future of insurance management at your fingertips,
-                         where precision meets unparalleled user experience.</p>
-                    </div>
-                    <a class="btn">Learn More&#128274;</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-info">
-                    <img src="/images/cover.png" alt="NurseNav">
-                    <h3>Nurse Nav</h3>
-                    <div class="tags">
-                    <span class="tag">Front End</span>
-                    <span class="tag">Color Pyschology</span>
-                    <span class="tag">UI/UX</span>
-                    <span class="tag">Web App</span>
-                    <span class="tag">Full-Stack</span>
-                    <span class="tag">Healthcare</span>
-                    <span class="tag">MongoDb</span>
-                    </div>
-                    <div id="project-text">
-                    <p>
-                    Unveiling a groundbreaking healthcare solution—providing easy and affordable medical care for all. 
-                    Experience a seamless blend of accessibility and affordability, making optimal health within reach for everyone.    
-                    </p>
-                    </div>
-                    <a href="/html/project4.html" class="btn">Learn More</a>
-                </div>
-            </div>
+        <span id="welcome">Hello! I'm <i id="name">Kshitij.</i></span>
+        <div class="text-switcher">
+            <div class="text">a Developer</div>
+            <div class="text">an Analyst</div>
+            <div class="text">a Mentor</div>
+            <div class="text">an Engineer</div>
         </div>
     </section>
-    <section id="contact">
-        <form action="https://formspree.io/f/xoqoopnd" method="post">
-            <h2 id="navC">Leave me a message</h2>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
+    </div>
+    <section id="end">
+        <span id="end-line">
+            <a href="https://github.com/K-Kulshrestha" target="_blank">
+                <i class="fa fa-github" style="font-size:36px"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kshitijkulshrestha/" target="_blank">
+                <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+            </a>
+            <a href="mailto:kshitijkuls6@gmail.com" target="_blank">
+                <i class="material-icons" style="font-size:36px">mail</i>
+            </a>
+        </span>
     </section>
-    </main>
-    <footer>
-        <p>&copy; Kshitij Kulshrestha 2023</p>    
-        <p><a href="https://github.com/K-Kulshrestha">Github | </a> <a href="https://www.linkedin.com/in/kshitijkulshrestha/">Linkedin | </a><a href="mailto:kshitijkuls6@gmail.com">Email</a></p>
-    </footer>
-    <script>
-     const cursor = new MouseFollower({
-    el: null,
-    container: document.body,
-    className: 'mf-cursor',
-    innerClassName: 'mf-cursor-inner',
-    textClassName: 'mf-cursor-text',
-    mediaClassName: 'mf-cursor-media',
-    mediaBoxClassName: 'mf-cursor-media-box',
-    iconSvgClassName: 'mf-svgsprite',
-    iconSvgNamePrefix: '-',
-    iconSvgSrc: '',
-    dataAttr: 'cursor',
-    hiddenState: '-hidden',
-    textState: '-text',
-    iconState: '-icon',
-    activeState: '-active',
-    mediaState: '-media',
-    stateDetection: {
-        '-pointer': 'a,button',
-        '-hidden': 'iframe'
-    },
-    visible: true,
-    visibleOnState: false,
-    speed: 0.1,
-    ease: 'expo.out',
-    overwrite: true,
-    skewing: 0,
-    skewingText: 2,
-    skewingIcon: 2,
-    skewingMedia: 2,
-    skewingDelta: 0.001,
-    skewingDeltaMax: 0.15,
-    stickDelta: 0.15,
-    showTimeout: 20,
-    hideOnLeave: true,
-    hideTimeout: 300,
-    hideMediaTimeout: 300
-});     
-    </script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

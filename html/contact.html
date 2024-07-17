@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>K</title>
+</head>
+<body>
+    <nav id="contact-nav">
+        <a id="logo" href="/index.html">    
+            <i class="fa fa-arrow-left" style="font-size:15px"></i>
+        </a>
+    </nav>
+    <div id="contact">
+        <div id="send-off">
+        <img src="/images/WavingCat.gif" alt="">
+        <h1>I am glad you could stop by!</h1>
+        </div>
+        <form action="https://formspree.io/f/xoqoopnd" method="post">
+            <h2>Send me a message.</h2>
+            <div class="name-fields">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+            <button type="submit"><i class="fa fa-check" aria-hidden="true"></i></button>
+        </form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

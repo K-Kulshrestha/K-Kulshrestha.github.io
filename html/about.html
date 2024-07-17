@@ -3,119 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More me</title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
     <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>K</title>
 </head>
-<div id="loading">
-    <div id="loading-spinner"></div>
-</div>
-<body id="personal-page">
-<header id="personalheader">
-        <a id="home" href="/">KK</a>
-        <span data-cursor-img="/images/home.jpg" id="back-home"><a href="/">home</a></span>
-</header>
-<h1>more me</h1>
-<div id="blog">
-<div id="titles">
-<ul>
-</ul>
-</div>
-<main>
-    <div class="row">
-        <div class="column">
-          <a data-cursor-text="SASE" href="#sase"><img src="/images/SASEcarry.jpg"></a>
-          <span id="caption">
-          Society of Asian Scientists and Engineers
-        </span>
-          <a data-cursor-text="ATSA" href="#culture"><img src="/images/AtsaPic.jpg"></a>
-          <span id="caption">
-          Agaram Tamil Student Association
-        </span>
+<body>
+    <div class="about-me-container">
+        <div class="user-photo">
+            <a href="/index.html" class="close-button-link">
+                <div class="close-button">
+                <span class="close-button-x"></span>    
+            </div>
+            </a>
+            <img src="/images/KshitijKulshrestha.jpg" alt="User Photo">
+            <h1>Kshitij Kulshrestha</h1>
         </div>
-        <div class="column">
-        <a data-cursor-text="ISA" href="#culture"><img src="/images/FallBash.jpg"></a>
-        <span id="caption">
-        Indian Student Association
-        </span>
-        <a data-cursor-text="HackUTDX" href="#hacker"><img src="/images/HackUTD.JPG"></a>
-        <span id="caption">
-        Participated in HackUTD x2
-        </span>
+        <div class="widgets">
+            <div class="widget">
+                <h2>About me</h2>
+                <p>
+                    My name is <b>Kshitij</b>, and I am a <b>computer science</b> student at the <b>University of Texas at Dallas</b>. 
+                    I find a lot of joy in creating and experiencing <b>experiences</b>. 
+                    As someone would tell a story to readers or, in my case, craft an experience for my users.
+                    When I'm not working on projects, you'll find me immersed in other passions. I love <b>cooking</b> and trying out new foods. 
+                    The kitchen becomes my playground, where flavors dance and new recipes come to life. 
+                    It's a symphony of tastes, each dish telling its own <b>story</b>.
+                    I also love <b>leveling up</b> and going to the gym. Fitness isn't just a routine; it's a journey of self-improvement and resilience. 
+                    I spend countless hours perfecting my form and pushing my limits, each workout designed with meticulous attention to detail.
+                    <b>Every project, every meal, every workout—each one</b> is a testament to my <b>dedication and passion</b>. 
+                    I believe in going the <b>extra step</b> to ensure everything I create is a <b>unique and memorable experience</b>.
+                    <b>Stop by</b> and spend as much time as you would like! 
+                    <b>Let's share</b> stories, savor new flavors, and immerse ourselves in the magic of technology, culinary arts, and fitness.
+                </p>
+            </div>
+            <div class="widget">
+                <h2>My Experiences</h2>
+                <ul>
+                    <li>Currently - User Experience Club - <b>Vice President</b></li>
+                    <li>Currently - Tune Tunnel <b>Software Engineer Intern</b></li>
+                    <li>May 2024 - July 2024 - Rex Academy - <b>CS Instructor</b></li>
+                    <li>March 2024 - May 2024 - ACM UTD - <b>Student Researcher</b></li>
+                    <li>August 2020 - June 2021 - Bronc Botz - <b>Mentor and FTC Dean's List Semifinalist</b></li>
+                </ul>
+            </div>
         </div>
-        <div class="column">
-        <a data-cursor-text="UI/UX" href="#user-experience"><img src="/images/UXConference.JPG"></a>
-        <span id="caption">
-        User Experience Club
-        </span>
-        <a data-cursor-text="Fitness Journey" href="#fitness"><img src="/images/Freshmenyear.jpg"></a>
-        <span id="caption">
-        Lost 70+ pounds
-        </span>
-        </div>
-        <div class="column">
-        <a data-cursor-text="Current Year" href="#this-year"><img src="/images/Shazjpg.jpg"></a>
-        <span id="caption">
-        Working on polishing my skills
-        </span>
-        </div>
-        <div class="column">
-        <a data-cursor-text="UTD" href="#comet"><img src="/images/UTDMascot.jpg"></a>
-        <span id="caption">
-        I am a junior at University of Texas at Dallas
-        </span>
-        <a data-cursor-text="Misc" href="#random"><img src="/images/RandomDallas.jpg"></a>
-        <span id="caption">
-        I love to sing
-        </span>
-          </div>
-      </div>
-</main>
-</div>
-<script>
-  const cursor = new MouseFollower({
- el: null,
- container: document.body,
- className: 'mf-cursor',
- innerClassName: 'mf-cursor-inner',
- textClassName: 'mf-cursor-text',
- mediaClassName: 'mf-cursor-media',
- mediaBoxClassName: 'mf-cursor-media-box',
- iconSvgClassName: 'mf-svgsprite',
- iconSvgNamePrefix: '-',
- iconSvgSrc: '',
- dataAttr: 'cursor',
- hiddenState: '-hidden',
- textState: '-text',
- iconState: '-icon',
- activeState: '-active',
- mediaState: '-media',
- stateDetection: {
-     '-pointer': 'a,button',
-     '-hidden': 'iframe'
- },
- visible: true,
- visibleOnState: false,
- speed: 0.55,
- ease: 'expo.out',
- overwrite: true,
- skewing: 0,
- skewingText: 3,
- skewingIcon: 2,
- skewingMedia: 2,
- skewingDelta: 0.001,
- skewingDeltaMax: 0.15,
- stickDelta: 0.15,
- showTimeout: 20,
- hideOnLeave: true,
- hideTimeout: 300,
- hideMediaTimeout: 300
-});     
- </script>
+    </div>
+    <nav id="about-nav">
+        <a href="/index.html" target="_blank" id="download-button">
+            Learn More!
+        </a>
+    </nav>
+    <script src="/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K</title>
+    <link rel="stylesheet" href="/css/acm.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="container">
+    <a href="projects.html" class="back-button">←</a>
+    <header>
+        <h1>Feelings behind Words</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Political discourse in social media is crucial for informed democratic decision-making but is susceptible to manipulation through persuasive techniques and misinformation. This project focuses on automating the detection of persuasion techniques employed in social media content using a multimodal Artificial Neural Network (ANN) model.</p>
+    </section>
+
+    <section id="goals">
+        <h2>Goals</h2>
+        <p>The primary goal of this project is to develop a robust model capable of analyzing both textual and image-based content in social media posts, detecting various persuasion techniques such as appeal to authority, repetition, and bandwagon.</p>
+    </section>
+
+    <section id="methodology">
+        <h2>Methodology</h2>
+        <h3>Model Architecture</h3>
+        <p><strong>Model 1 (Sentiment Analysis):</strong> Utilizes BERT for tokenization and TensorFlow for sentiment classification.</p>
+        <p><strong>Model 2 (Image Classification):</strong> Employs Convolutional Neural Networks (CNNs) for image feature extraction and classification.</p>
+        <h3>Combined Model</h3>
+        <p>Integrates outputs from Model 1 and Model 2 using late fusion to enhance accuracy in detecting persuasion techniques.</p>
+        <p>Data sourced from the 15th International Workshop on Semantic Evaluation (SemEval 2021), comprising 888 labeled social media posts.</p>
+    </section>
+
+    <section id="results">
+        <h2>Results</h2>
+        <p><strong>Overall Accuracy:</strong> The combined model achieves an accuracy of 89.2% in detecting persuasion techniques.</p>
+        <p><strong>Label-wise Accuracy:</strong> Varied accuracies across 20 persuasion techniques, highlighting strengths and limitations in detection.</p>
+    </section>
+
+    <section id="analysis">
+        <h2>Analysis</h2>
+        <p>Disparities in accuracy underscore the effectiveness of multimodal approaches in discerning rhetoric within social media content. The model enhances media literacy and aids in minimizing propaganda dissemination.</p>
+    </section>
+
+    <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>By providing valuable insights into manipulative content, this project lays the foundation for enhanced awareness and critical engagement with media consumption. Further advancements could include integrating advanced algorithms and contextual analysis for broader societal impacts.</p>
+    </section>
+
+    <footer>
+        <p>For more details, download our <a href="/images/Feelings_Behind_Words (6).pdf" target="_blank">Feelings behind Words poster</a></p>
+    </footer>
+</div>
+</body>
+</html>

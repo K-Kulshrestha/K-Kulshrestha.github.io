@@ -1,29 +1,127 @@
-// Array of loading messages
-const loadingMessages = [
-    "Kshitij is eagerly preparing his masterpiece!",
-    "Just a moment, Kshitij can't wait for you to explore his website!",
-    "Almost there! Kshitij is adding the final touches.",
-];
+const cursor = new MouseFollower({
+el: null,
+container: document.body,
+className: 'mf-cursor',
+innerClassName: 'mf-cursor-inner',
+textClassName: 'mf-cursor-text',
+mediaClassName: 'mf-cursor-media',
+mediaBoxClassName: 'mf-cursor-media-box',
+iconSvgClassName: 'mf-svgsprite',
+iconSvgNamePrefix: '-',
+iconSvgSrc: '',
+dataAttr: 'cursor',
+hiddenState: '-hidden',
+textState: '-text',
+iconState: '-icon',
+activeState: '-active',
+mediaState: '-media',
+stateDetection: {
+    '-pointer': 'a,button',
+    '-hidden': 'iframe'
+},
+visible: true,
+visibleOnState: false,
+speed: 0.1,
+ease: 'expo.out',
+overwrite: true,
+skewing: 2,
+skewingText: 2,
+skewingIcon: 2,
+skewingMedia: 2,
+skewingDelta: 0.001,
+skewingDeltaMax: 0.15,
+stickDelta: 0.15,
+showTimeout: 20,
+hideOnLeave: true,
+hideTimeout: 300,
+hideMediaTimeout: 300
+});    
 
-// Function to get a random loading message
-function getRandomLoadingMessage() {
-    const randomIndex = Math.floor(Math.random() * loadingMessages.length);
-    return loadingMessages[randomIndex];
-}
-
-// Function to update loading text
-function updateLoadingText() {
-    const loadingTextElement = document.getElementById('loading-text');
-    if (loadingTextElement) {
-        loadingTextElement.textContent = getRandomLoadingMessage();
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+    form.reset();
     }
 }
 
-// Simulate loading delay for demonstration purposes
-setTimeout(function () {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('enter-website').style.display = 'block';
-}, 2000); // Adjust the delay as needed
 
-// Update loading text periodically
-setInterval(updateLoadingText, 400);
+document.addEventListener('DOMContentLoaded', () => {
+    let carouselItems = document.querySelectorAll('.carousel-item');
+    let currentSlide = 0;
+    let slideInterval;
+    
+    function showSlide(index) {
+        carouselItems[currentSlide].classList.remove('active');
+        currentSlide = (index + carouselItems.length) % carouselItems.length;
+        carouselItems[currentSlide].classList.add('active');
+    }
+    
+    function changeSlide(direction) {
+        showSlide(currentSlide + direction);
+    }
+    
+    // Function to start the automatic slideshow
+    function startSlideShow() {
+        slideInterval = setInterval(() => {
+            changeSlide(1); // Change slide every 5 seconds (adjust as needed)
+        }, 3000); // Adjust interval time as needed (currently set to 5 seconds)
+    }
+    
+    // Function to stop the automatic slideshow
+    function stopSlideShow() {
+        clearInterval(slideInterval);
+    }
+    
+    // Previous and Next button event listeners
+    document.querySelector('.prev').addEventListener('click', () => {
+        changeSlide(-1);
+        stopSlideShow(); // Stop automatic slideshow on manual navigation
+    });
+    
+    document.querySelector('.next').addEventListener('click', () => {
+        changeSlide(1);
+        stopSlideShow(); // Stop automatic slideshow on manual navigation
+    });
+    
+    // Start the automatic slideshow initially
+    startSlideShow();
+    
+    // Initially show the first slide
+    showSlide(0);
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const particleContainer = document.getElementById('particle-container');
+
+    for (let i = 0; i < 100; i++) { // Adjust number of particles as needed
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        const size = Math.random() * 10 + 5; // Particle size between 5px and 15px
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+        particle.style.top = `${Math.random() * 100}vh`; // Random vertical position
+        particle.style.animationDuration = `${Math.random() * 5 + 3}s`; // Random float duration
+
+        particleContainer.appendChild(particle);
+    }
+});
+
+
+function toggleMenu() {
+    const navLinks = document.getElementById('nav-links');
+    if (navLinks.style.display === 'flex') {
+        navLinks.style.display = 'none';
+    } else {
+        navLinks.style.display = 'flex';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const easter = document.getElementById('download-button');
+    
+    easter.addEventListener('click', (event) => {
+        event.preventDefault();
+        alert('I am glad you want to learn more about me :) I have a special easter if you go back to the main page and click on my name in Hindi you can know more about me!');
+    }); 
+});

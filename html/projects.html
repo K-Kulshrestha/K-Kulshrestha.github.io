@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K</title>
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="carousel">
+        <a href="/html/nursenav.html">
+            <div class="carousel-item active" style="background-image: url('/images/nursenav/NurseNavFlow.jpg');">
+                <div class="carousel-text">
+                    <h2>Nurse Nav</h2>
+                    <p>NurseNav is a platform designed to empower and support caregivers and elderly individuals. Its primary mission is to promote dignity, independence, and quality of life for these groups through the provision of resources and community building.</p>
+                </div>
+            </div>
+        </a>
+        <a href="/html/acm.html">
+            <div class="carousel-item" style="background-image: url('/images/cover.png');">
+                <div class="carousel-text">
+                    <h2>Feelings Behind Words</h2>
+                    <p>Feelings Behind Words: Detecting persuasive techniques in social media using a multi-modal AI model, enhancing critical discourse analysis.                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Navigation buttons -->
+    <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
+    
+    <script src="/js/script.js"></script>
+    <nav id="about-nav">
+        <a id="logo" href="/index.html"><i class="fa fa-home" style="font-size:15px"></i></a>
+    </nav>
+</body>
+</html>

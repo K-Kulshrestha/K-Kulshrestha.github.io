@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #C54BBC; /* Background color palette */
+    color: #333; /* Text color */
+    user-select: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add padding for content spacing */
+    background-color: #fff; /* Container background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for container */
+}
+
+/* Headings */
+
+h1, h2, h3 {
+    color: #C54BBC; /* Heading color */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block; /* Ensure images behave correctly */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for images */
+}
+
+/* Back button styles */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #C54BBC; /* Match your color palette */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.back-button:hover {
+    background-color: #A93A9A; /* Darker shade on hover */
+}
