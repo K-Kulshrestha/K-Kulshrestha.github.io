@@ -165,25 +165,6 @@ nav #works:hover{
     animation: fade-down 0.4s;
 }
 
-@keyframes shine {
-    100%{
-        color: #fff;
-        text-shadow: #FC0 1px 0 10px;
-    }
-}
-
-#works{
-    animation: shine 1s ease infinite;
-}
-
-#hindi{
-    color: #abaaaa;
-}
-
-#hindi{
-    
-}
-
 #hindi:hover{
     color: #fff;
     text-shadow: #FC0 1px 0 10px;
@@ -215,7 +196,7 @@ nav #works:hover{
 
 .text-switcher {
     position: relative;
-    height: 90px;
+    height: 80px;
     width: 300px;
     overflow: hidden;
     background-color: #000;
@@ -314,7 +295,7 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: zoom 1s;
     transition: all 0.3s ease;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 form:hover {
@@ -359,7 +340,7 @@ textarea {
     font-size: 16px;
     background-color: #f9f9f9;
     transition: border 0.3s ease;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 input:focus,
@@ -377,7 +358,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     width: 100%;
 }
 
@@ -400,7 +381,7 @@ button:hover {
     display: flex;
     align-items: center;
     font-size: 0.7em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     background-color: rgba(0, 0, 0, 0);
     color: white;
     text-align: center;

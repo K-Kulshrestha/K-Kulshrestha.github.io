@@ -121,7 +121,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const easter = document.getElementById('download-button');
     
     easter.addEventListener('click', (event) => {
-        event.preventDefault();
-        alert('I am glad you want to learn more about me :) I have a special easter if you go back to the main page and click on my name in Hindi you can know more about me!');
+        alert('I’m glad you\'re interested in learning more about me! Feel free to stay as long as you like and explore.');
     }); 
 });
